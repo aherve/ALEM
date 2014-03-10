@@ -15,5 +15,6 @@ group :doc do
 end
 
 gem 'rspec-rails'
+gem 'autotest-rails'
 gem 'bson_ext'
 gem 'mongoid', :github => 'mongoid/mongoid'
