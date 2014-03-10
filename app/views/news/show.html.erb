@@ -1,2 +1,7 @@
-<h1>News#show</h1>
-<p>Find me in app/views/news/show.html.erb</p>
+<%= title @actu.title %>
+<h1><%= @actu.title %></h1>
+<h2><%= I18n.l @actu.date_time %></h2>
+
+<div>
+  <%= @actu.content %>
+</div>

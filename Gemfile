@@ -29,3 +29,5 @@ gem 'mongoid', :github => 'mongoid/mongoid'
 gem 'rails_admin'
 
 gem 'bootstrap-sass'
+gem 'rails-i18n'
+gem 'tinymce-rails'
