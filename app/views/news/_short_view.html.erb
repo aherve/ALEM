@@ -1,1 +1,4 @@
-<%= link_to actu.title, news_path(actu) %>
+<li>
+<%= link_to short_desc(actu), news_path(actu) %>
+<%= raw actu.short_description%>
+</li>

@@ -3,8 +3,6 @@
 
 <ul>
   <% @actus.each do |actu| %>
-    <li>
     <%= render :partial => 'news/short_view', locals: {actu: actu} %>
-    </li>
   <% end %>
 </ul>
