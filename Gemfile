@@ -14,7 +14,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'rspec-rails'
-gem 'autotest-rails'
+group :test do 
+  gem 'rspec-rails'
+  gem 'autotest-rails'
+end
+
 gem 'bson_ext'
 gem 'mongoid', :github => 'mongoid/mongoid'
+
+gem 'rails_admin'
