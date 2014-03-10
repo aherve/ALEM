@@ -4,6 +4,7 @@ class NewsController < ApplicationController
   end
 
   def show
-    @actu = News.find(params[:id])
+    puts "debug : url = #{params[:url]}"
+    @actu = News.find_by(:url => params[:url])
   end
 end

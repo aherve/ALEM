@@ -1,7 +1,7 @@
 ALEM::Application.routes.draw do
 
-  get "news/index",  :as => "news_index"
-  get "news/:id" => "news#show", :as => "news"
+  get "news" => "news#index",  :as => "news_index"
+  get "news/:url" => "news#show", :as => "news"
   root :to => "home#index"
   get "home/index"
 

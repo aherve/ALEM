@@ -16,10 +16,15 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.model News do 
+    configure :url, :string
+    configure :short_description, :string
+  end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
-    new
+    #new
     export
     bulk_delete
     show
