@@ -19,7 +19,13 @@ group :test do
   gem 'autotest-rails'
 end
 
+group :development do 
+  gem 'rails_layout'
+end
+
 gem 'bson_ext'
 gem 'mongoid', :github => 'mongoid/mongoid'
 
 gem 'rails_admin'
+
+gem 'bootstrap-sass'
