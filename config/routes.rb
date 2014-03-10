@@ -5,7 +5,7 @@ ALEM::Application.routes.draw do
   root :to => "home#index"
   get "home/index"
 
-  get "photos/index", :as => "photos"
+  get "photos" => "photos#index",  :as => "photos"
   get "videos/index", :as => "videos"
   get "music/index" , :as => "music"
 
