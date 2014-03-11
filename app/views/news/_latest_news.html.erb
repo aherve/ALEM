@@ -1,0 +1,10 @@
+<div class="latest_news well">
+  <ul>
+    <% news.each do |n| %>
+      <div class="l_news">
+        <h3><%= link_to n.title, news_path(n) %></h3>
+        <%= n.short_description %>
+      </div>
+    <% end %>
+  </ul>
+</div>

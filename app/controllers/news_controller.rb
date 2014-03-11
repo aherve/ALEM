@@ -1,6 +1,6 @@
 class NewsController < ApplicationController
   def index
-    @actus = News.all.sort_by(&:date_time).reverse
+    @actus = News.all.sort_by(&:date).reverse
   end
 
   def show

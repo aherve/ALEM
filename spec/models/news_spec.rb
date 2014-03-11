@@ -11,6 +11,7 @@ describe News do
         :title => "foo",
         :content => "hahaha",
         :url => "bar",
+        :date => Date.today,
       }
     end
 
@@ -18,13 +19,22 @@ describe News do
       News.new(@h).valid?.should be_true
     end
 
-    it "should be validated" do 
+    it "should not contain special characters" do 
       News.new(
         @h.merge({:url => 'ha!ha'})
       ).valid?.should be_false
+    end
+
+    it "should not contain special character '.'" do 
+      News.new(
+        @h.merge({:url => 'ha.com'})
+      ).valid?.should be_false
+    end
+
+    it "should not be empty special characters" do 
       News.new(
         @h.merge({:url => ''})
-      ).valid?.should be_true
+      ).valid?.should be_false
     end
   end
 
