@@ -13,8 +13,7 @@
  */
 
 body{
-  background-image:url('fond-alem1.jpg')
-  //background-image:url('fond-alem2.png')
+  background-image: image-url("fond-alem2.png");
 }
 
 main{
