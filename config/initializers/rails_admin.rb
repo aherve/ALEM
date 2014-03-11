@@ -35,6 +35,7 @@ RailsAdmin.config do |config|
 
   config.model News do 
     configure :url, :string
+    configure :address, :string
     configure :short_description, :string
   end
 end
