@@ -2,8 +2,7 @@
   <ul>
     <% news.each do |n| %>
       <div class="l_news">
-        <h3><%= link_to n.title, news_path(n) %></h3>
-        <%= n.short_description %>
+        <%= render :partial => 'news/short_view', locals: {actu: n} %>
       </div>
     <% end %>
   </ul>

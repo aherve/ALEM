@@ -13,10 +13,17 @@
  */
 
 body{
-  background-image:url('fond-alem1.jpg')
-  //background-image:url('fond-alem2.png')
+  //background-image:url('fond-alem1.jpg')
+  background-image:url('fond-alem2.png')
+}
+
+#main-container{
+  margin-top:50px;
+  width:80%;
+  background-color:white;
 }
 
 main{
-  background-color:white;
+  padding-right:30%;
 }
+
