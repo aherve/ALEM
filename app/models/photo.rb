@@ -3,6 +3,7 @@ class Photo
   field :title, type: String
   field :img, type: String
   field :published, type: Boolean
+  field :description, type: String
 
   mount_uploader :img, ImgUploader
 end

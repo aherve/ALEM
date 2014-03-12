@@ -1,20 +1,3 @@
 <% title "Photos" %>
 
-<div id="myCarousel" class="carousel slide">
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <% @photos.each_with_index do |photo,i| %>
-      <div class="<%= i == 0 ? 'active' : '' %> item">
-        <img src="<%= photo.img.url %>">
-        <div class="container">
-          <div class="carousel-caption">
-            <h3><%= photo.title %></h3>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
+<%= render 'photos_carousel' %>

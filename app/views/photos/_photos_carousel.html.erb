@@ -1,0 +1,32 @@
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+  <!-- Carousel indicators -->
+  <ol class="carousel-indicators">
+    <% @photos.each_with_index.each do |p,i| %>
+      <li data-target="#myCarousel" data-slide-to="<%=i%>" <%= i == 0 ? 'class="active"' : '' %>></li>
+    <% end %>
+  </ol>   
+
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <% @photos.each_with_index.each do |p,i| %>
+      <div class="<%= i == 0 ? 'active':'' %> item">
+        <%= image_tag p.img.url, :size => '270'%>
+        <!--
+        <div class="carousel-caption">
+          <h3><%= p.title %></h3>
+          <% unless p.description.blank? %>
+            <p><%= raw p.description %></p>
+          <% end %>
+        </div>
+        -->
+      </div>
+    <% end %>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>

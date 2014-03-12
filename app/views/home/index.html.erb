@@ -1,14 +1,41 @@
 <% title "accueil"  %>
 
-<h1>ALÈM</h1>
 
-<%= render :partial => "news/latest_news", locals: {news: @latest_news} %>
-<div class='container'>
-<p>
-Alem vous propose une ballade sonore à dos de dromadaire...<br/>
-</p>
-<p>
-La caravane de musiciens traverse les dunes et les steppes sur des jeux rythmiques insolites et harmonies bien épicées.
-Avec une section cuivres, un clavier et une section rythmique, l’équipe ré-explore les morceaux qui ont fait l’histoire de la Musique éthiopienne tels  Mulatu Astake, Mahmoud Ahmed, en prenant des détours par des compositions de maîtres du jazz et du funk comme Freddie Hubbard ou Dizzy Gillespie.
-</p>
+<div class="row">
+  <div class="col-md-7" id="home-presentation">
+    <p>
+    <h1>ALÈM</h1> vous propose une ballade sonore à dos de dromadaire...
+    </p>
+    <p>
+    La caravane de musiciens traverse les dunes et les steppes sur des jeux rythmiques insolites et harmonies bien épicées.
+    Avec une section cuivres, un clavier et une section rythmique, l’équipe ré-explore les morceaux qui ont fait l’histoire de la Musique
+    éthiopienne tels  Mulatu Astake, Mahmoud Ahmed, en prenant des détours par des compositions de maîtres du jazz et du funk comme Freddie
+    Hubbard ou Dizzy Gillespie.
+    </p>
+  </div>
+
+  <div class="col-md-5">
+      <%= render :partial => "news/latest_news", locals: {news: @latest_news} %>
+  </div>
 </div>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#tab_a" data-toggle="tab">Musique</a></li>
+  <li><a href="#tab_b" data-toggle="tab">Videos</a></li>
+  <li><a href="#tab_c" data-toggle="tab">Photos</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="tab_a">
+    <h4>Musique</h4>
+    <iframe width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1620954&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>  
+  </div>
+  <div class="tab-pane" id="tab_b">
+    <h4>Videos</h4>
+    <%= render 'videos/videos_index' %>
+  </div>
+  <div class="tab-pane" id="tab_c">
+    <h4>photos</h4>
+    <%= render 'photos/photos_carousel' %>
+  </div>
+</div><!-- tab content -->
