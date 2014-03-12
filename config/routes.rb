@@ -1,5 +1,6 @@
 ALEM::Application.routes.draw do
 
+  devise_for :admins
   get "news" => "news#index",  :as => "news_index"
   get "news/:url" => "news#show", :as => "news"
   root :to => "home#index"

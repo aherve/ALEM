@@ -33,3 +33,4 @@ gem 'rails-i18n'
 gem 'tinymce-rails'
 gem 'carrierwave-mongoid', :require => "carrierwave/mongoid"
 gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
+gem 'devise'
