@@ -39,5 +39,9 @@ RailsAdmin.config do |config|
     configure :short_description, :string
   end
 
+  config.model Video do 
+    configure :iframe_url, :string
+  end
+
   config.excluded_models << "Admin"
 end
