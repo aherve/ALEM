@@ -38,4 +38,6 @@ RailsAdmin.config do |config|
     configure :address, :string
     configure :short_description, :string
   end
+
+  config.excluded_models << "Admin"
 end
