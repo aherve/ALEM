@@ -40,7 +40,7 @@ RailsAdmin.config do |config|
   end
 
   config.model Video do 
-    configure :iframe_url, :string
+    configure :youtube_id, :string
   end
 
   config.excluded_models << "Admin"
