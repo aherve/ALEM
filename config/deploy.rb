@@ -1,8 +1,17 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'alem'
+set :repo_url, 'git@github.com:aherve/ALEM.git'
+
+set :user, 'root'
+
+set :ssh_options,{
+  forward_agent: true,
+  port: 22,
+  verbose: :debug,
+  user: fetch(:user),
+}
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
@@ -26,7 +35,7 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 # set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }

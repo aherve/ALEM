@@ -21,8 +21,7 @@ end
 
 group :development do 
   gem 'rails_layout'
-  gem 'capistrano'
-  gem 'net-ssh', '~> 2.8.1'
+  gem 'capistrano-rails'
 end
 
 gem 'bson_ext'
