@@ -17,7 +17,7 @@ set :ssh_options,{
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-# set :deploy_to, '/var/www/my_app'
+set :deploy_to, '/var/www/alem'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -35,7 +35,7 @@ set :ssh_options,{
 # set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
- set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads config/}
+ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads config/mongoid.yml config/boot.rb}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
