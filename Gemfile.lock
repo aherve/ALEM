@@ -16,6 +16,25 @@ GIT
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
 
+GIT
+  remote: https://github.com/sferik/rails_admin.git
+  revision: 962b92b0c6e628517f20ca52291b899d49ae7381
+  specs:
+    rails_admin (0.6.1)
+      builder (~> 3.1)
+      coffee-rails (~> 4.0)
+      font-awesome-rails (>= 3.0)
+      haml (~> 4.0)
+      jquery-rails (~> 3.0)
+      jquery-ui-rails (~> 4.0)
+      kaminari (~> 0.14)
+      nested_form (~> 0.3)
+      rack-pjax (~> 0.7)
+      rails (~> 4.0)
+      remotipart (~> 1.0)
+      safe_yaml (~> 1.0)
+      sass-rails (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -148,20 +167,6 @@ GEM
     rails-i18n (4.0.1)
       i18n (~> 0.6)
       rails (~> 4.0)
-    rails_admin (0.6.1)
-      builder (~> 3.1)
-      coffee-rails (~> 4.0)
-      font-awesome-rails (>= 3.0)
-      haml (~> 4.0)
-      jquery-rails (~> 3.0)
-      jquery-ui-rails (~> 4.0)
-      kaminari (~> 0.14)
-      nested_form (~> 0.3)
-      rack-pjax (~> 0.7)
-      rails (~> 4.0)
-      remotipart (~> 1.0)
-      safe_yaml (~> 1.0)
-      sass-rails (~> 4.0)
     rails_layout (1.0.11)
     railties (4.0.3)
       actionpack (= 4.0.3)
@@ -244,7 +249,7 @@ DEPENDENCIES
   mongoid-grid_fs!
   rails (= 4.0.3)
   rails-i18n
-  rails_admin
+  rails_admin!
   rails_layout
   rspec-rails
   sass-rails (~> 4.0.0)
