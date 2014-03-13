@@ -14,7 +14,9 @@
 
 body{
   //background-image:url('fond-alem1.jpg')
-  background-image:url('fond-alem2.png')
+  //background-image:url('fond-alem2.png')
+  background-image:url(image-path('fond-alem2.png'));
+
 }
 
 #main-container{
