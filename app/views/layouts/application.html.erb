@@ -18,6 +18,6 @@
     <footer>
       <%= render 'layouts/navigation' %>
     </footer>
+    <%= render 'layouts/analytics' if Rails.env.production? %>
   </body>
-  <%= render 'layouts/analytics' if Rails.env.production? %>
 </html>
