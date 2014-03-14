@@ -1,7 +1,24 @@
+*F...
 
+Pending:
+  Musician add some examples to (or delete) /home/aherve/ALEM/spec/models/musician_spec.rb
+    # No reason given
+    # ./spec/models/musician_spec.rb:4
 
-Finished in 0.00016 seconds
-0 examples, 0 failures
+Failures:
 
-Randomized with seed 37037
+  1) News url should be valid
+     Failure/Error: News.new(@h).valid?.should be_true
+       expected: true value
+            got: false
+     # ./spec/models/news_spec.rb:19:in `block (3 levels) in <top (required)>'
+
+Finished in 0.29101 seconds
+5 examples, 1 failure, 1 pending
+
+Failed examples:
+
+rspec ./spec/models/news_spec.rb:18 # News url should be valid
+
+Randomized with seed 27435
 

@@ -12,6 +12,7 @@ describe News do
         :content => "hahaha",
         :url => "bar",
         :date => Date.today,
+        :short_description => "c'est chouette"
       }
     end
 
