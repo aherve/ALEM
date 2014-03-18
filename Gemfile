@@ -21,8 +21,9 @@ end
 
 group :development do 
   gem 'rails_layout'
-  gem 'capistrano-rails'
 end
+
+gem 'capistrano-rails'
 
 gem 'bson_ext'
 gem 'mongoid', :github => 'mongoid/mongoid'

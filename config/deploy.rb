@@ -36,13 +36,13 @@ set :deploy_to, '/var/www/alem'
 set :linked_files, %w{config/mongoid.yml config/initializers/secret_token.rb}
 
 # Default value for linked_dirs is []
- set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 5
 
 namespace :deploy do
 
@@ -50,7 +50,7 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
+       execute :touch, release_path.join('tmp/restart.txt')
     end
   end
 
