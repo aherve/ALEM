@@ -10,14 +10,16 @@
   </head>
   <body style="padding-bottom: 70px">
     <div class="container" id="main-container">
+      <header>
+        <%= render 'layouts/navigation' %>
+      </header>
       <main role="main" class='row'>
       <%= render 'layouts/messages' %>
       <%= yield %>
       </main>
+      <footer>
+      </footer>
     </div><!-- container -->
-    <footer>
-      <%= render 'layouts/navigation' %>
-    </footer>
     <%= render 'layouts/analytics' if Rails.env.production? %>
   </body>
 </html>
