@@ -31,7 +31,7 @@ gem 'capistrano-chruby'
 gem 'bson_ext'
 gem 'mongoid', :github => 'mongoid/mongoid'
 
-gem 'rails_admin', :github => "sferik/rails_admin.git"
+gem 'rails_admin', :github => "sferik/rails_admin"
 
 gem 'bootstrap-sass'
 gem 'rails-i18n'

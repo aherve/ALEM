@@ -17,8 +17,8 @@ GIT
       tzinfo (>= 0.3.37)
 
 GIT
-  remote: https://github.com/sferik/rails_admin.git
-  revision: 962b92b0c6e628517f20ca52291b899d49ae7381
+  remote: git://github.com/sferik/rails_admin.git
+  revision: 80ffd43258f987bd8247e6ba6caee092b9c706d3
   specs:
     rails_admin (0.6.1)
       builder (~> 3.1)
