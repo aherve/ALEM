@@ -9,6 +9,9 @@
     <%= raw @actu.content %>
   </div>
   <div class='col-md-6'>
-    <%= gmaps_iframe(@actu.address) if @actu.address %>
+    <% unless (add = @actu.address).blank? %>
+      <%= gmaps_iframe(add)%>
+      <h3><%= add %></h3>
+    <% end %>
   </div>
 </div>
