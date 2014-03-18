@@ -2,8 +2,11 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
+set :default_shell, "bash -l"
+
 set :application, 'alem'
 set :repo_url, 'git@github.com:aherve/ALEM.git'
+
 
 set :user, 'root'
 

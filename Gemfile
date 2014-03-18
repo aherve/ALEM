@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
@@ -24,11 +24,14 @@ group :development do
 end
 
 gem 'capistrano-rails'
+gem 'capistrano-rvm'
+gem 'capistrano-rbenv'
+gem 'capistrano-chruby'
 
 gem 'bson_ext'
 gem 'mongoid', :github => 'mongoid/mongoid'
 
-gem 'rails_admin', :git => "https://github.com/sferik/rails_admin.git"
+gem 'rails_admin', :github => "sferik/rails_admin.git"
 
 gem 'bootstrap-sass'
 gem 'rails-i18n'
