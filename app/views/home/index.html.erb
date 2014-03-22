@@ -1,15 +1,15 @@
 <% title "accueil"  %>
+<% description "ALÈM, site officiel. Ethio-funk à Paris depuis 2014."  %>
 
 <div class="row">
   <div class="col-md-7" id="home-presentation">
     <p>
-      <h1>ALÈM</h1> vous propose une ballade sonore à dos de dromadaire...
+    <h1>ALÈM</h1> vous propose une ballade sonore à dos de dromadaire...
     </p>
     <p>
-      La caravane de musiciens traverse les dunes et les steppes sur des jeux rythmiques insolites et harmonies bien épicées.
-      Avec une section cuivres, un clavier et une section rythmique, l’équipe ré-explore les morceaux qui ont fait l’histoire de la Musique
-      éthiopienne tels  Mulatu Astake, Mahmoud Ahmed, en prenant des détours par des compositions de maîtres du jazz et du funk comme Freddie
-      Hubbard ou Dizzy Gillespie.
+    La caravane de musiciens traverse les dunes et les steppes sur des jeux rythmiques insolites et harmonies bien épicées.
+    Avec une section cuivres, un clavier et une section rythmique, l’équipe ré-explore les morceaux qui ont fait l’histoire de la Musique éthiopienne tels  Mulatu Astatke, Mahmoud Ahmed, en prenant des détours par des compositions de maîtres du jazz et du funk comme Freddie
+    Hubbard ou Dizzy Gillespie.
     </p>
   </div>
 
@@ -20,23 +20,12 @@
   </div>
 </div>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#musique" data-toggle="tab"><h3>Musique</h3></a></li>
-  <li><a href="#videos" data-toggle="tab"><h3>Videos</h3></a></li>
-  <li><a href="#photos" data-toggle="tab"><h3>Photos</h3></a></li>
-</ul>
 
-<div class="tab-content">
-  <div class="tab-pane active" id="musique">
-    <h4>Musique</h4>
-    <iframe width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1620954&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>  
-  </div>
-  <div class="tab-pane" id="videos">
-    <h4>Videos</h4>
-    <%= render 'videos/videos_index' %>
-  </div>
-  <div class="tab-pane" id="photos">
-    <h4>photos</h4>
-    <%= render 'photos/photos_carousel' %>
-  </div>
-</div><!-- tab content -->
+<div class="tab-pane active" id="musique">
+  <h4>Musique</h4>
+  <iframe width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/14620401&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
+</div>
+<div class="tab-pane" id="videos">
+  <h4>Videos</h4>
+  <%= render 'videos/videos_index' %>
+</div>

@@ -17,8 +17,8 @@ GIT
       tzinfo (>= 0.3.37)
 
 GIT
-  remote: https://github.com/sferik/rails_admin.git
-  revision: 962b92b0c6e628517f20ca52291b899d49ae7381
+  remote: git://github.com/sferik/rails_admin.git
+  revision: 80ffd43258f987bd8247e6ba6caee092b9c706d3
   specs:
     rails_admin (0.6.1)
       builder (~> 3.1)
@@ -36,7 +36,7 @@ GIT
       sass-rails (~> 4.0)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     ZenTest (4.9.5)
     actionmailer (4.0.3)
@@ -82,9 +82,18 @@ GEM
     capistrano-bundler (1.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano-chruby (0.1.1)
+      capistrano (~> 3.0)
+      sshkit (~> 1.3)
     capistrano-rails (1.1.1)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rbenv (2.0.2)
+      capistrano (~> 3.1)
+      sshkit (~> 1.3)
+    capistrano-rvm (0.1.1)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -244,7 +253,10 @@ DEPENDENCIES
   autotest-rails
   bootstrap-sass
   bson_ext
+  capistrano-chruby
   capistrano-rails
+  capistrano-rbenv
+  capistrano-rvm
   carrierwave-mongoid
   coffee-rails (~> 4.0.0)
   devise

@@ -1,4 +1,6 @@
 <%= title @actu.title %>
+<%= description @actu.title %>
+
 <div class='row' style="padding-left:30px;">
   <h1><%= @actu.title %></h1>
   <h3><%= I18n.l @actu.date %></h3>
@@ -6,9 +8,13 @@
 
 <div class='row'>
   <div class='col-md-6' style='padding-top:50px;'>
+    <%= image_tag @actu.img.url if @actu.img %>
     <%= raw @actu.content %>
   </div>
   <div class='col-md-6'>
-    <%= gmaps_iframe(@actu.address) if @actu.address %>
+    <% unless (add = @actu.address).blank? %>
+      <h3><%= add %></h3>
+      <%= gmaps_iframe(add)%>
+    <% end %>
   </div>
 </div>
