@@ -12,20 +12,26 @@
     <div id="fb-root"></div>
     <div class="container" id="main-container">
       <header>
-        <%= render 'layouts/navigation' %>
+      <%= render 'layouts/navigation' %>
       </header>
       <main role="main" class='row'>
-      <div class="pull-right">
+      <div class="row pull-right">
         <%= render 'layouts/social_share' %>
       </div>
+
       <%= render 'layouts/messages' %>
       <%= yield %>
       </main>
       <footer>
       <div class="row">
-        <div class="col-md-6 col-md-offset-5">
-        <%= render 'layouts/social_share' %>
-      </div>
+        <div class="col-md-6 col-md-offset-4">
+          <%= render 'layouts/social_share' %>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-4">
+            <%= render "newsletter/subscribe_form" %>
+          </div>
+        </div>
       </div>
       </footer>
     </div><!-- container -->
