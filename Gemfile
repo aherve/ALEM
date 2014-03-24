@@ -42,3 +42,4 @@ gem 'devise'
 
 gem 'mini_magick'
 gem 'social-buttons'
+gem 'sitemap_generator'

@@ -52,8 +52,13 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
+
+       #refresh sitemap: 
+       execute :rake, 'sitemap:refresh'
+
       # Your restart mechanism here, for example:
        execute :touch, release_path.join('tmp/restart.txt')
+
     end
   end
 

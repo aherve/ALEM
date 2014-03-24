@@ -7,6 +7,7 @@ class News
   #field :short_description, type: String
   field :content, type: String
   field :date, type: Date
+  field :updated_at, type: Date
 
   mount_uploader :img, ImgUploader
 
@@ -17,6 +18,12 @@ class News
 
   def to_param
     url
+  end
+
+  before_save :updated_at
+
+  def updated_at
+    @updated_at = Date.today
   end
 
 end
