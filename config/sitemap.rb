@@ -35,6 +35,6 @@ SitemapGenerator::Sitemap.create do
   # Add all newss:
   
      News.all.each do |news|
-       add news_path(news), :lastmod => news.updated_at
+       add news_path(news), :lastmod => news.updated_at, :changefreq => 'monthly'
      end
 end
