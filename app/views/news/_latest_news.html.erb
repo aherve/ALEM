@@ -3,9 +3,7 @@
   <%= link_to "voir toutes les actualités", news_index_path  %>
   <ul>
     <% news.each do |n| %>
-      <div class="l_news">
-        <%= render :partial => 'news/short_view', locals: {actu: n} %>
-      </div>
+      <%= render :partial => 'news/short_view', locals: {actu: n} %>
     <% end %>
   </ul>
 </div>

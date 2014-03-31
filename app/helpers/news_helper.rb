@@ -5,7 +5,7 @@ module NewsHelper
     s << ((d = I18n.l(actu.date)).empty? ? "" : d+" - " )
     s << actu.title
     s << "</h3>"
-    s << image_tag(actu.img.thumb.url) if actu.img
+    s << image_tag(actu.img.thumb.url, :alt =>actu.title) unless actu.img.thumb.url.nil?
     raw s
   end
 
