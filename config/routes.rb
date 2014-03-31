@@ -6,9 +6,9 @@ ALEM::Application.routes.draw do
   root :to => "home#index"
   get "home/index"
 
-  get "photos" => "photos#index",  :as => "photos"
-  get "videos" => "videos#index",  :as => "videos"
-  get "music/index" , :as => "music"
+  #get "photos" => "photos#index",  :as => "photos"
+  #get "videos" => "videos#index",  :as => "videos"
+  #get "music/index" , :as => "music"
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
